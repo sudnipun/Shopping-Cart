@@ -1,0 +1,23 @@
+﻿@model  ShoppingCart.Models.OrderEntryModel
+
+
+<div>
+    <table>
+
+        @foreach (ShoppingCart.Models.OrderEntryModel serverStatus in ViewBag.orders)
+        {
+
+            <tr>
+                <td>@serverStatus.FirstName</td>
+                <td>@serverStatus.LastName</td>
+                <td>@serverStatus.EmailAddress</td>
+                <td>@serverStatus.ProductName</td>
+                <td>@serverStatus.ProductPrice</td>
+                <td>@serverStatus.PurchaseDate</td>
+            </tr>
+
+        }
+
+    </table>
+
+</div>

@@ -1,0 +1,35 @@
+﻿
+<html>
+<head runat="server">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="•http://ajax.aspnetcdn.com/ajax/jquery.ui/1.11.2/jquery-ui.min.js
+"></script>
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.8.1/jquery.validate.min.js
+"></script>
+    <script type="text/javascript" src="/Scripts/validate.js"></script>
+</head>
+<div>
+    
+    <p>@ViewBag.Name</p>
+    <p>@ViewBag.Desc</p>
+    <p>@ViewBag.Price</p>
+   
+    
+        @*@using (Html.BeginForm("Orders", "Home"))
+        {*@
+    <form id="form">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="fname" class="required" minlength="1" placeholder="First Name" />
+        <label for="lname">last Name</label>
+        <input type="text" id="lname" name="lname" class="required" minlength="1" placeholder="Last Name" />
+
+        <label>Email Address</label>
+        <input id="email" type="text" class="required" name="email" minlength="1" placeholder="Email" />
+        <input type="submit" onclick="IsValid();" id="buy" value="Buy" title="Buy" />
+       
+    </form>
+
+      @*  }*@
+   
+</div>
+</html>
